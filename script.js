@@ -28,4 +28,28 @@ function ordenaPalavra(p1,p2){
     return frequencias[p2] - frequencias[p1];
 }
 
- }
+return ordenadas.slice(0,10); 
+}
+
+function contaFrequencia(palavras){
+    let frequencias ={};
+    for (let i of palavras) {
+        frequencias [i]=0;
+        for (let j of palavras) {
+            if (i == j){
+                frequencias[i] ++;
+            }
+        }
+    }
+    return frequencias;
+}
+
+function tiraPalavrasRuins(palavras){
+    const palavraBoas =[];
+    for (let palavras of palavras) {
+        if(!PALAVRAS_RUINS.has (palavra)&& palavras.length >2){
+            palavraBoas.push(palavra)
+        }
+    }
+    return palavrasBoas;
+}
